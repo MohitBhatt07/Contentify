@@ -13,7 +13,7 @@ const InputModalSheet = ({ children, onClose, isOpen }) => {
         isOpen ? "opacity-100 translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="modal-content relative z-20 m-auto rounded-lg px-5 py-6 bg-white w-1/2">
+      <div className="modal-content relative z-20 m-auto rounded-lg px-5 py-6 bg-white w-1/2 max-[550px]:w-[90%]">
         <div onClick={onClose} className="right-10  absolute h-6 w-6  flex rounded-full items-center justify-center  bg-red-400">
           <button className="  text-white" >
             <GiTireIronCross />
