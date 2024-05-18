@@ -25,7 +25,7 @@ const getAllEntities = async (req, res) => {
     }
     console.log(tableAttributes);
     res.json(tableAttributes);
-    // res.json(tableNames.rows.map(table => table.table_name));
+    
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Failed to fetch table names" });

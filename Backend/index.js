@@ -22,6 +22,7 @@ app.get("/", async (req, res) => {
   res.send("welcome to homepage!");
 });
 
+
 app.use("/api/entities" , entityRouter);
 
 app.use("/api/entity" , dataRouter);

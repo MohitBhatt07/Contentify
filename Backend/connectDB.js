@@ -2,6 +2,8 @@ const {Client } =  require("pg");
 const dotenv = require("dotenv");
 dotenv.config();
 
+// const client = new Client("postgres://contentify_db_user:UdgjWzqvJyqkchF5Rw6SbneJorw6nzcb@dpg-cp45qv21hbls73esaedg-a/contentify_db");
+
 const client = new Client({
   user: process.env.DB_USER,
   host: process.env.DB_HOST,
