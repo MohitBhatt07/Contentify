@@ -3,6 +3,7 @@ import axios from "axios";
 
 import { toast } from "react-toastify";
 import InputModalSheet from "./InputModalSheet";
+import Tooltip from "./Tooltip";
 
 const CreateEntity = ({ onCreateEntity, isOpen, onClose }) => {
   const [entityName, setEntityName] = useState("");
@@ -69,7 +70,7 @@ const CreateEntity = ({ onCreateEntity, isOpen, onClose }) => {
   return (
     <InputModalSheet onClose={closeHandler} isOpen={isOpen}>
       <>
-        <h2 className="text-2xl font-bold mb-2">Create Entity</h2>
+        <h2 className="text-2xl font-bold mb-2">Create Entity<Tooltip /></h2>
         <div className="text-center ">
           <input
             type="text"
